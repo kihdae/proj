@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>My Playlist</title>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css"
+    integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous" />
+  <link href="style.css" rel="stylesheet" type="text/css" />
+</head>
+
+<body>
+  <h1>My Playlist</h1>
+
+  <div class="form">
+    <p>Add a new song:</p>
+    <div class="inputs">
+      <input placeholder="Image URL"
+        class="image" 
+         title="Enter the URL of the song's image" 
+         required />
+      <input placeholder="Song Name" 
+        class="song-name" 
+         title="Enter the name of the song" 
+         required />
+      <input placeholder="Artist"
+        class="artist" 
+         title="Enter the artist's name" 
+         required />
+      <input placeholder="Song Link Address"
+        class="song-link" 
+         title="Enter the URL of the song's link" 
+         required/>
+    </div>
+    <br>
+    <button class="add">Add</button>
+    <button class="shuffle">Shuffle</button>
+    <button class="clear" onclick="clearPlaylist()">Clear Playlist</button>
+
+  </div>
+  <div id="successMessage" style="display: none;">Song added successfully!</div>
+  <div class="heading">
+    <h4>Image</h4>
+    <h4>Song</h4>
+    <h4>Artist</h4>
+    <h4>Song Link</h4>
+  </div>
+  <button class="open-link">Open Link</button>
+  <button onclick="sendEmail()">Share via Email</button>
+
+
+  <div class="display">
+    <div class="column display-image"></div>
+    <div class="column display-song"></div>
+    <div class="column display-artist"></div>
+    <div class="column display-link"></div>
+
+  <script src="script.js"></script>
+</body>
+
+</html>
